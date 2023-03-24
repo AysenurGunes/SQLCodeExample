@@ -15,5 +15,8 @@ end
 
 
 
---35241
---25361
+------
+--Update with inner join
+------
+
+update Inventories set XCoordinate='49,83154123' , YCoordinate='40,36590864' from Inventories i inner join InventoryRequiredFields irf on i.InventoryID=irf.InventoryID where i.Activity=1 and irf.Value='IKB15110011'
